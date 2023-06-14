@@ -1,0 +1,44 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.border-animation {
+    animation-name: rainbow-border;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border: 6px solid;
+    border-radius: 5px;
+}
+
+@keyframes rainbow-border {
+    0% {
+        border-color: red;
+    }
+
+    16.67% {
+        border-color: orange;
+    }
+
+    33.33% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: green;
+    }
+
+    66.67% {
+        border-color: blue;
+    }
+
+    83.33% {
+        border-color: indigo;
+    }
+
+    100% {
+        border-color: violet;
+    }
+}

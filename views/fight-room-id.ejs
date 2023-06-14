@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGHT ROOM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style4.css">
+</head>
+
+<body style="background-color: #9C835F;">
+    <div id="bundle">
+        <header id="header">
+            <div id="simbollebihkecil">
+                <img src="/images/simbollebihkecil.png" width="50">
+            </div>
+            <div id="logo">
+                <img src="/images/logo.png" width="60">
+            </div>
+            <div id="title">
+                <h2 style="color: #F9B23D;">ROCK PAPER SCISSORS</h2>
+            </div>
+        </header>
+
+        <section id="section" class="d-flex justify-content-center mt-4">
+            <div id="playerr" class="d-flex flex-column align-items-center justify-content-between">
+                <h2 style="color: black;">PLAYER 1</h2>
+                <button id="player-rock" class="player-attack rock">
+                    <img src="/images/batu.png" width="90">
+                </button>
+                <button id="player-paper" class="player-attack paper">
+                    <img src="/images/kertas.png" width="90">
+                </button>
+                <button id="player-scissors" class="player-attack scissors">
+                    <img src="/images/gunting.png" width="90">
+                </button>
+            </div>
+
+            <div id="resultt" class="d-flex flex-column align-items-center">
+                <div id="versus">
+                    <h1 class="display-1" style="color:#BD0000; font-weight: bold;">VS</h1>
+                </div>
+                <div id="player-win" style="background-color:#4C9654;">
+                    <h2>PLAYER 1 WIN</h2>
+                </div>
+                <div id="com-win" style="background-color:#4C9654;">
+                    <h2>COM WIN</h2>
+                </div>
+                <div id="draw" style="background-color: #035B0C;">
+                    <h2>DRAW</h2>
+                </div>
+            </div>
+
+            <div id="computerr" class="d-flex flex-column align-items-center justify-content-between">
+                <h2 style="color: black;">COM</h2>
+                <div id="com-rock" class="com-attack rock">
+                    <img src="/images/batu.png" width="90">
+                </div>
+                <div id="com-paper" class="com-attack paper">
+                    <img src="/images/kertas.png" width="90">
+                </div>
+                <div id="com-scissors" class="com-attack scissors">
+                    <img src="/images/gunting.png" width="90">
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <button id="refresh">
+                <img src="/images/refresh.png" width="70">
+            </button>
+        </footer>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="/javascripts/index.js"></script>
+</body>
+</html>

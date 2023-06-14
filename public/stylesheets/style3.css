@@ -1,0 +1,66 @@
+body {
+    overflow: hidden;
+    color: black;
+    animation: colorAnimation 5s infinite alternate;
+}
+
+@keyframes colorAnimation {
+    0% {
+        background-color: khaki;
+    }
+
+    25% {
+        background-color: lightblue;
+    }
+
+    50% {
+        background-color: palegreen;
+    }
+
+    75% {
+        background-color: plum;
+    }
+
+    100% {
+        background-color: salmon;
+    }
+}
+
+.crm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lima {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+}
+
+.lima {
+    color: white;
+    margin-top: 0;
+}
+
+.h1 {
+    margin-top: 20px;
+}
+
+.h5 {
+    margin-top: 10px;
+}
+
+.form {
+    margin-top: 10px;
+}

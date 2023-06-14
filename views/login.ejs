@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body style="background-color: black; color: white;">
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center; height: 100vh;">
+        <div class="container border-animation">
+            <h1>LOGIN</h1>
+            <% if (noUserData) { %>
+                <script>
+                    $(document).ready(function () {
+                        $('#noUserDataModal').modal('show');
+                    });
+                </script>
+                <% } %>
+
+            <% if (invalidPassword) { %>
+                <script>
+                    $(document).ready(function () {
+                        $('#invalidPasswordModal').modal('show');
+                    });
+                </script>
+                <% } %>
+
+
+            <form action="/login" method="post">
+                <label for="username"></label><br>
+                    <input type="text" name="username" id="username" placeholder="USERNAME" style="height:40px;" required><br>
+                        <label for="password"></label><br>
+                    <input type="password" name="password" id="password" placeholder="PASSWORD" style="height:40px" required><br><br>
+                        <button type="submit" style="cursor: pointer; width: 41%; height: 40px;" class="btn btn-outline-primary">LOGIN</button>
+            </form>
+        </div>
+
+        <div class="modal fade" id="invalidPasswordModal" tabindex="-1" aria-labelledby="invalidPasswordModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: black; border-color: red;">
+                    <div class="modal-header" style="border-color: red;">
+                        <h5 class="modal-title" id="invalidPasswordModalLabel" style="color: red;">ERROR</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">❌</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="color: red;"><b>INVALID PASSWORD</b></p>
+                    </div>
+                    <div class="modal-footer" style="border-color: red;">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal" style="border-color: red; color: red;">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="noUserDataModal" tabindex="-1" aria-labelledby="noUserDataModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: black; border-color: red;">
+                    <div class="modal-header" style="border-color: red;">
+                        <h5 class="modal-title" id="noUserDataModalLabel" style="color: red;">ERROR</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">❌</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="color: red;"><b>NO USER DATA</b></p>
+                    </div>
+                    <div class="modal-footer" style="border-color: red;">
+                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal" style="border-color: red; color: red;">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

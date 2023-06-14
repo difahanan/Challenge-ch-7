@@ -1,0 +1,143 @@
+* {
+    font-family: Arial;
+    color: white;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#bundle {
+    padding: 2%;
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    column-gap: 4%;
+}
+
+#section {
+    height: 70%;
+}
+
+#footer {
+    position: absolute;
+    margin: auto;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#playerr,
+#resultt,
+#computerr {
+    width: 30%;
+}
+
+
+#resultt {
+    position: relative;
+}
+
+#versus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+#player-win,
+#com-win,
+#draw {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    z-index: 50;
+    padding: 5%;
+    width: 100%;
+    min-height: 100px;
+    z-index: 30;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rock,
+.paper,
+.scissors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 140px;
+    aspect-ratio: 1 / 1;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+@media (orientation: portrait) and (max-width:600px) {
+    #header {
+        justify-content: space-evenly;
+    }
+
+    .rock,
+    .paper,
+    .scissors,
+    #refresh,
+    #resultt {
+        scale: 0.7;
+    }
+
+    .rock,
+    .paper,
+    .scissors {
+        width: 70%;
+        min-width: 150px;
+    }
+}
+
+@media only screen and (max-width:900px) and (orientation:landscape) {
+
+    .rock,
+    .paper,
+    .scissors,
+    #refresh,
+    #resultt {
+        scale: 0.8;
+    }
+
+    .rock,
+    .paper,
+    .scissors {
+        width: 60%;
+        min-width: 120px;
+    }
+}
+
+@media only screen and (max-width:600px) and (orientation:landscape) {
+    #header {
+        justify-content: space-evenly;
+    }
+
+    .rock,
+    .paper,
+    .scissors,
+    #refresh,
+    #resultt {
+        scale: 0.7;
+    }
+}
