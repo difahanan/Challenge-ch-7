@@ -1,0 +1,8 @@
+DB_HOST      = satao.db.elephantsql.com
+DB_PORT      = 5432
+DB_NAME      = mtgszpmj
+DB_USER      = mtgszpmj
+DB_PASS      = mkrLZsH1Bvza7foGCU_IDvmJ-2FAjTUP
+SECRET_LOGIN = myserver
+JWT_SECRET   = myjwt
+SECRET_NAME  = mypassport
